@@ -5,28 +5,28 @@ body {
     margin: 0 auto;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap");
+
 .main-text {
-  font-size: 14px;
-  font-family: "Montserrat";
+  font-size: 44px;
+  font-family: "Fraunces", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  line-height: 23px;
+  font-weight: bold;
   color: var(--Dark-grayish-blue);
+  margin-left: 10px;
 }
 
 .container {
     display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
 
 .card {
-    display:flex ;
-    /* justify-content: center;
-    align-items: center; */
+    display: flex;
+    height: 450px;
+    border-radius: 20px;
     background-color: white;
-
 }
 
 .picture {
@@ -40,13 +40,22 @@ body {
     width: 300px;
 }
 
+.first-text {
+    font-family: "Monserrat";
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
 .sub-text {
     color: hsl(228, 12%, 48%);
     font-size: 14px;
+    margin-left: 10px;
 }
 
 .price {
     font-size: 30px;
+    font-weight: bolder;
     color:hsl(158, 36%, 37%);
 }
 
@@ -60,11 +69,92 @@ body {
     background-color: hsl(158, 36%, 37%);
     color: white;
     border-radius: 10px;
-    font-size: 20px bold;
-    height: 60px;
-    width: 160px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    height: 50px;
+    width: 230px;
+    border: none;
 }
 
 .basket {
     padding: 10px 10px ;
 }
+
+.numbers {
+    display: flex;
+    justify-content: space-around; 
+}
+
+.butt {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 660px;
+        width: 360px;
+    }
+
+    .picture {
+        width: 360px;
+        height: 300px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .card-text {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+
+    .main-text {
+        font-size: 34px;
+        font-weight: 700;
+        margin: 0px 0px 0px 20px;
+        
+    }
+
+    .first-text {
+        font-weight: lighter;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    .sub-text {
+        font-size: 18px;
+        margin-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        width: 320px;
+    }
+
+    .numbers {
+        display:flex;
+        justify-content: left;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .price {
+        font-size: 36px;
+    }
+    
+    .discount {
+        font-size: 15px;
+        margin-left: 30px;
+    }
+
+}
+
